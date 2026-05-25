@@ -1,7 +1,8 @@
 import Icons from "components/common/Icons";
 // import PaymentReports from "fetchers/paymentReports";
 import React, { useState } from "react";
-import { Button, Card, CardBody } from "reactstrap";
+import { Button } from "components/ui/button";
+import { Card, CardContent } from "components/ui/card";
 // import ModalDialog from "./ModalDialog";
 
 export default function PreviewButton({ course, author, currentReport }) {
@@ -19,18 +20,20 @@ export default function PreviewButton({ course, author, currentReport }) {
       <p className="mb-0 mt-4">Reporte enviado:</p>
 
       <Card>
-        <CardBody className="p-2">
+        <CardContent className="p-2">
           <p className="m-0 p-0">ID: {currentReport._id}</p>
-          <Button className="btn btn-success " onClick={toggle}>
+          <Button variant="success" size="sm" className="mr-2" onClick={toggle}>
             <Icons icon="eye" />
           </Button>
           <Button
-            className="btn btn-danger heading"
+            variant="destructive"
+            size="sm"
+            className="heading"
             onClick={handleDeleteReport}
           >
             <Icons icon="trash" />
           </Button>
-        </CardBody>
+        </CardContent>
       </Card>
       <div className="mt-4"></div>
       {/* <ModalDialog

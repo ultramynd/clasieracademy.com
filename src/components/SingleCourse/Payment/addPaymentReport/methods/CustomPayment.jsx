@@ -6,7 +6,6 @@ import {
   ModalHeader,
   ModalBody,
   ModalFooter,
-  Button,
   Input,
   Row,
   Col,
@@ -14,6 +13,7 @@ import {
   CardImg,
   FormGroup,
 } from "reactstrap";
+import { Button } from "components/ui/button";
 
 // import PaymentReports from "../../../../../fetchers/paymentReports";
 
@@ -37,11 +37,11 @@ export default function CustomPayment({ course, author, parentToggle }) {
     <>
       {pic === null ? (
         <Button
-          outline
-          color="light"
+          variant="outline"
           onClick={() => {
             document.getElementById(`pic${index}`).click();
           }}
+          className="payment-proof-upload"
           style={{
             padding: 0,
             width: "100%",
@@ -64,7 +64,7 @@ export default function CustomPayment({ course, author, parentToggle }) {
               right: 17,
               bottom: 2, // marginTop: -65,
             }}
-            color="danger"
+            variant="destructive"
             onClick={() => {
               // document.getElementById(`pic${index}`).value = "none";
               onDelete();
@@ -157,10 +157,10 @@ export default function CustomPayment({ course, author, parentToggle }) {
           </div>
         </ModalBody>
         <ModalFooter>
-          <Button color="primary" onClick={handleClick}>
+          <Button onClick={handleClick}>
             Enviar
           </Button>
-          <Button color="secondary" onClick={toggle}>
+          <Button variant="outline" onClick={toggle}>
             Cancel
           </Button>
         </ModalFooter>

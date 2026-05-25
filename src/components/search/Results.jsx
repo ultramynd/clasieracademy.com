@@ -3,7 +3,8 @@ import Icons from "components/common/Icons";
 import parser from "html-react-parser";
 import Link from "next/link";
 import React from "react";
-import { Card, CardBody, CardImg } from "reactstrap";
+import { CardImg } from "reactstrap";
+import { Card, CardContent } from "components/ui/card";
 import { search } from "../../../site.config";
 
 const coursePlaceholder = "/images/course-placeholder.svg";
@@ -61,7 +62,7 @@ export default function Results({ results }) {
                   }}
                 />
                 <div className="py-2 p-md-0">
-                  <CardBody className="p-0 px-3">
+                  <CardContent className="p-0 px-3">
                     <h4 className="text-primary">
                       <Icons icon="books" className="mr-2" />
                       {element.course.course_title}
@@ -78,7 +79,7 @@ export default function Results({ results }) {
                       )}
                     </div>
                     <small className="mb-0 text-success">{element.link}</small>
-                  </CardBody>
+                  </CardContent>
                 </div>
               </div>
             ) : (
@@ -93,7 +94,7 @@ export default function Results({ results }) {
                   }}
                 />
                 <div className="py-2 p-md-0">
-                  <CardBody className="p-0 px-3">
+                  <CardContent className="p-0 px-3">
                     <h4 className="text-primary">
                       <Icons icon="playCircle" className="mr-2" />
                       {element.item.item_title}
@@ -107,7 +108,7 @@ export default function Results({ results }) {
                       {parser(element.item.item_description || "")}
                     </div>
                     <small className="mb-0 text-success">{element.link}</small>
-                  </CardBody>
+                  </CardContent>
                 </div>
               </div>
             )}

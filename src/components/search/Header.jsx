@@ -2,6 +2,7 @@ import Icons from "components/common/Icons";
 import React from "react";
 import { search as searchConfig } from "../../../site.config";
 import { useRouter } from "next/router";
+import { Button } from "components/ui/button";
 
 export default function Hero({ word }) {
   const router = useRouter();
@@ -40,9 +41,9 @@ export default function Hero({ word }) {
                   className="text-dark rounded-pill shadow-md bg-light"
                   placeholder={searchConfig.searchPlaceholder}
                 />
-                <button type="submit" className="btn btn-pills btn-primary">
+                <Button type="submit" aria-label="Search">
                   <Icons icon="search" />
-                </button>
+                </Button>
               </div>
             </form>
           </div>

@@ -1,5 +1,6 @@
 import React from "react";
-import { Container, Row, Col, Card, CardBody } from "reactstrap";
+import { Container, Row, Col } from "reactstrap";
+import { Card, CardContent } from "components/ui/card";
 
 class PHUserProfile extends React.Component {
   render() {
@@ -14,7 +15,7 @@ class PHUserProfile extends React.Component {
           <Row>
             <Col xs="12" lg="8" className="order-lg-2">
               <Card className="mb-4 shadow-md">
-                <CardBody
+                <CardContent
                   style={{
                     padding: "30px 15px",
                   }}
@@ -59,7 +60,7 @@ class PHUserProfile extends React.Component {
                       </Col>
                     </Row>
                   </Container>
-                </CardBody>
+                </CardContent>
               </Card>
 
               <div className="card shadow-md">

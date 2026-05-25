@@ -3,7 +3,8 @@ import React, { useContext } from "react";
 import DB from "helpers/db";
 import { useRouter } from "next/router";
 import svgUrl from "assets/svgs/undraw_secure_login_pdn4.svg";
-import { Card, CardBody, Col, Row } from "reactstrap";
+import { Col, Row } from "reactstrap";
+import { Card, CardContent } from "components/ui/card";
 
 import FirebaseContext from "context/FirebaseContext";
 import StyledFirebaseAuth from "react-firebaseui/StyledFirebaseAuth";
@@ -29,8 +30,8 @@ export default function login() {
           zIndex: -1,
         }}
       >
-        <Card className="m-auto bg-light p-3">
-          <CardBody>
+        <Card className="m-auto bg-light p-3 auth-surface-card">
+          <CardContent>
             <Row>
               <Col lg="6" className="d-none d-lg-flex ">
                 <img
@@ -64,7 +65,7 @@ export default function login() {
                 </small>
               </Col>
             </Row>
-          </CardBody>
+          </CardContent>
         </Card>
       </div>
     </>

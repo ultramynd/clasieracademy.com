@@ -2,6 +2,7 @@ import Icons from "components/common/Icons";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React from "react";
+import { Button } from "components/ui/button";
 import { hero } from "../../../site.config";
 
 const starterPaths = [
@@ -53,13 +54,12 @@ export default function Hero() {
                         className="text-dark pl-3"
                         placeholder={hero.searchPlaceholder}
                       />
-                      <button
+                      <Button
                         type="submit"
-                        className="btn btn-primary"
                         aria-label="Search courses"
                       >
                         <Icons icon="search" className="fa-x1" style={{ fontSize: "16px" }} />
-                      </button>
+                      </Button>
                     </div>
                   </form>
                 </div>

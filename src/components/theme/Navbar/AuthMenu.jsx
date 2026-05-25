@@ -7,6 +7,7 @@ import { connect } from "react-redux";
 
 import app from "myFirebase";
 import { doc, getDoc } from "firebase/firestore";
+import { Button } from "components/ui/button";
 
 function AuthMenu(props) {
   const { isDark, user } = props;
@@ -56,28 +57,22 @@ function AuthMenu(props) {
           <>
             {router.pathname !== "/register" ? (
               <div className="buy-button p-0 m-0 mr-2">
-                <a
-                  className="btn btn-primary my-0 p-2"
-                  href="/register"
-                  target="_blank"
-                  onClick={openRegisterPage}
-                >
-                  Get Started
-                </a>
+                <Button asChild size="sm" className="my-0">
+                  <a href="/register" target="_blank" onClick={openRegisterPage}>
+                    Get Started
+                  </a>
+                </Button>
               </div>
             ) : (
               <></>
             )}
             {router.pathname !== "/login" ? (
               <div className="buy-button p-0 ml-0">
-                <a
-                  className="btn btn-light text-dark my-0 p-2"
-                  href="/login"
-                  target="_blank"
-                  onClick={openLoginPage}
-                >
-                  Sign in
-                </a>
+                <Button asChild variant="outline" size="sm" className="my-0">
+                  <a href="/login" target="_blank" onClick={openLoginPage}>
+                    Sign in
+                  </a>
+                </Button>
               </div>
             ) : (
               <></>

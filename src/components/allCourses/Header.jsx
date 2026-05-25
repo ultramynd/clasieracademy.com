@@ -1,6 +1,7 @@
 import Icons from "components/common/Icons";
 import { useRouter } from "next/router";
 import React from "react";
+import { Button } from "components/ui/button";
 import { allCourses } from "../../../site.config";
 
 export default function Hero() {
@@ -38,9 +39,9 @@ export default function Hero() {
                   className="text-dark"
                   placeholder={allCourses.searchPlaceholder}
                 />
-                <button type="submit" className="btn btn-primary" aria-label="Search courses">
+                <Button type="submit" aria-label="Search courses">
                   <Icons icon="search" />
-                </button>
+                </Button>
               </div>
             </form>
           </div>

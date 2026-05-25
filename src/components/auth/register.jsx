@@ -1,11 +1,11 @@
 import React from "react";
 import { user_nameChangedHandler } from "helpers/input";
-import { Button, Row, Col, Container } from "reactstrap";
 import Link from "next/link";
 import Icons from "components/common/Icons";
 // import Controller_Users from "fetchers/Users";
 import DB from "helpers/db";
 import { useRouter } from "next/router";
+import { Button } from "components/ui/button";
 
 export default function login() {
   // const users = new Controller_Users();
@@ -109,7 +109,7 @@ export default function login() {
                     </label>
                   </div>
                   <div className="form-group text-center">
-                    <Button type="submit" color="primary">
+                    <Button type="submit">
                       Create account
                       <Icons icon="arrowRight" className="ml-2" />
                     </Button>

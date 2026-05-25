@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, CardImg } from "reactstrap";
+import { CardImg } from "reactstrap";
 import _ from "lodash";
 import Link from "next/link";
 import PaymentButton from "./Payment/addPaymentReport/PaymentButton";
@@ -8,6 +8,7 @@ import PreviewButton from "./Payment/previewPaymentReport/PreviewButton";
 import Icons from "components/common/Icons";
 import { getShortLink } from "utils/courses";
 import { singleCourse } from "../../../site.config";
+import { Button } from "components/ui/button";
 
 const coursePlaceholder = "/images/course-placeholder.svg";
 
@@ -101,24 +102,23 @@ function Banner({ course, authors, paymentReports, items }) {
                 )
               ) : (
                 <div className="mt-4">
-                  <Link
-                    href={
-                      "/" +
-                      course.course_short_link +
-                      "/" +
-                      getShortLink(items[0].item_title)
-                    }
+                  <Button
+                    asChild
+                    className="w-100 heading single-course-action"
+                    size="lg"
                   >
-                    <p
-                      className="btn btn-primary w-100 heading"
-                      style={{
-                        fontSize: 25,
-                      }}
+                    <Link
+                      href={
+                        "/" +
+                        course.course_short_link +
+                        "/" +
+                        getShortLink(items[0].item_title)
+                      }
                     >
                       {singleCourse.buttonStartText}
                       <Icons icon="arrowRight" className="ml-2 arrow1" />
-                    </p>
-                  </Link>
+                    </Link>
+                  </Button>
                 </div>
               ))}
           </div>

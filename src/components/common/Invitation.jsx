@@ -1,5 +1,6 @@
 import React from "react";
-import { Button, Col, Container, Row } from "reactstrap";
+import { Col, Container, Row } from "reactstrap";
+import { Button } from "components/ui/button";
 
 export default function Invitation() {
   return (
@@ -25,7 +26,7 @@ export default function Invitation() {
                 </p>
               </Col>
               <Col xs="12" lg="auto" className="ml-auto my-auto">
-                <Button color="info" className="mt-3 my-lg-auto">
+                <Button className="mt-3 my-lg-auto">
                   Explore courses
                 </Button>
               </Col>

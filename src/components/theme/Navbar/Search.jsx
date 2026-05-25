@@ -3,6 +3,7 @@ import { useRouter } from "next/router";
 import React, { useState } from "react";
 import { Modal } from "reactstrap";
 import { search as searchConfig } from "../../../../site.config";
+import { Button } from "components/ui/button";
 
 export default function Search() {
   const router = useRouter();
@@ -52,9 +53,9 @@ export default function Search() {
                 className="text-dark rounded-pill shadow-md bg-light"
                 placeholder={searchConfig.searchPlaceholder}
               />
-              <button type="submit" className="btn btn-pills btn-primary">
+              <Button type="submit" aria-label="Search">
                 <Icons icon="search" />
-              </button>
+              </Button>
             </div>
           </form>
         </div>

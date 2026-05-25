@@ -715,6 +715,34 @@ a {
   box-shadow: none;
 }
 
+.ui-button--success {
+  background: #2eca8b;
+  border-color: #2eca8b;
+  color: #ffffff;
+  box-shadow: 0 10px 22px rgba(46, 202, 139, 0.2);
+}
+
+.ui-button--success:hover,
+.ui-button--success:focus {
+  background: #24a873;
+  border-color: #24a873;
+  color: #ffffff;
+}
+
+.ui-button--destructive {
+  background: #e43f52;
+  border-color: #e43f52;
+  color: #ffffff;
+  box-shadow: 0 10px 22px rgba(228, 63, 82, 0.2);
+}
+
+.ui-button--destructive:hover,
+.ui-button--destructive:focus {
+  background: #cf2a3d;
+  border-color: #cf2a3d;
+  color: #ffffff;
+}
+
 .ui-button-size--sm {
   min-height: 32px;
   padding: 8px 14px;
@@ -729,6 +757,35 @@ a {
   min-height: 42px;
   padding-inline: 22px;
   font-size: 0.82rem;
+}
+
+.subcribe-form .ui-button {
+  position: absolute;
+  top: 4px;
+  right: 6px;
+}
+
+.clasier-hero .subcribe-form .ui-button,
+.courses-search .ui-button {
+  position: static;
+  flex: 0 0 60px;
+  min-width: 60px;
+  border-radius: 0 !important;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.courses-search .ui-button {
+  flex-basis: 64px;
+  min-width: 64px;
+}
+
+.single-course-action {
+  font-size: 1.35rem;
+}
+
+.payment-proof-upload {
+  white-space: normal;
 }
 
 .ui-badge {
@@ -1602,7 +1659,8 @@ a {
     padding-left: 14px !important;
   }
 
-  .clasier-hero .subcribe-form .btn {
+  .clasier-hero .subcribe-form .btn,
+  .clasier-hero .subcribe-form .ui-button {
     flex-basis: 52px;
     min-width: 52px;
   }
@@ -1638,7 +1696,8 @@ a {
     padding-left: 14px;
   }
 
-  .courses-search .btn {
+  .courses-search .btn,
+  .courses-search .ui-button {
     flex-basis: 52px;
     min-width: 52px;
   }

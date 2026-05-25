@@ -1,14 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { connect } from "react-redux";
 
-import {
-  CardBody,
-  Card,
-  CardHeader,
-  CardTitle,
-  Button,
-  Collapse,
-} from "reactstrap";
+import { Collapse } from "reactstrap";
+import { Button } from "components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "components/ui/card";
 
 import { nameChangedHandler } from "helpers/input";
 import OptionCountries from "./OptionCountries";
@@ -67,14 +62,14 @@ function AuthorData(props) {
 
         <Card className="shadow-md mb-4">
           <CardHeader className="py-2 px-3">
-            <CardTitle tag="h5" className="m-0 d-flex">
+            <CardTitle className="m-0 d-flex">
               <span>
                 <Icons icon="user" className="mr-2" />
                 Datos del perfíl
               </span>
             </CardTitle>
           </CardHeader>
-          <CardBody>
+          <CardContent>
             <form onSubmit={handleDataUpdate} id="form-user-data">
               <h5 className="heading-small text-muted mb-4">
                 Información principal:
@@ -134,13 +129,13 @@ function AuthorData(props) {
 
               <Collapse isOpen={editable}>
                 <div className="text-center">
-                  <Button type="submit" className="my0" color="primary">
+                  <Button type="submit" className="my0">
                     Guardar cambios <i className="fa fa-save mr-2"></i>
                   </Button>
                 </div>
               </Collapse>
             </form>
-          </CardBody>
+          </CardContent>
         </Card>
       </>
     </div>

@@ -1,8 +1,6 @@
 import Icons from "components/common/Icons";
 import React from "react";
-
-// reactstrap components
-import { Card, CardBody, CardHeader, CardTitle } from "reactstrap";
+import { Card, CardContent, CardHeader, CardTitle } from "components/ui/card";
 
 export default class Certificates extends React.Component {
   render() {
@@ -10,32 +8,32 @@ export default class Certificates extends React.Component {
       <>
         <Card className="shadow-md">
           <CardHeader className="py-1 px-2">
-            <CardTitle tag="h6" className="m-0">
+            <CardTitle className="m-0">
               <Icons icon="books" className="mr-2" />
               Certificates
             </CardTitle>
           </CardHeader>
-          <CardBody>No certificates to show yet.</CardBody>
+          <CardContent>No certificates to show yet.</CardContent>
         </Card>
 
         <Card className="mt-4 shadow-md">
           <CardHeader className="py-1 px-2">
-            <CardTitle tag="h6" className="m-0">
+            <CardTitle className="m-0">
               <Icons icon="books" className="mr-2" />
               Courses
             </CardTitle>
           </CardHeader>
-          <CardBody>No courses to show yet.</CardBody>
+          <CardContent>No courses to show yet.</CardContent>
         </Card>
 
         <Card className="mt-4 shadow-md">
           <CardHeader className="py-1 px-2">
-            <CardTitle tag="h6" className="m-0">
+            <CardTitle className="m-0">
               <Icons icon="books" className="mr-2" />
               Sessions
             </CardTitle>
           </CardHeader>
-          <CardBody>No sessions to show yet.</CardBody>
+          <CardContent>No sessions to show yet.</CardContent>
         </Card>
       </>
     );

@@ -5,12 +5,11 @@ import React from "react";
 // import { useFirestore, useStorage, useUser } from "reactfire";
 import {
   Col,
-  CardBody,
   Container,
   Row,
-  Card,
   UncontrolledTooltip,
 } from "reactstrap";
+import { Card, CardContent } from "components/ui/card";
 import { getShortLink } from "utils/courses";
 
 const getPicUrl = (profile) => {
@@ -51,7 +50,7 @@ const ProfileCard = ({ profile, editable }) => {
 
   return (
     <Card className="shadow-md mb-4">
-      <CardBody>
+      <CardContent>
         <Container>
           <Row>
             <Col xs="12" lg="4" className="order-lg-2 mx-auto d-flex">
@@ -88,7 +87,7 @@ const ProfileCard = ({ profile, editable }) => {
             </Col>
           </Row>
         </Container>
-      </CardBody>
+      </CardContent>
       {editable ? (
         <UncontrolledTooltip delay={0} target="image-123">
           cambiar imagen

@@ -1,6 +1,6 @@
 import Icons from "components/common/Icons";
 import React, { useState } from "react";
-import { Button } from "reactstrap";
+import { Button } from "components/ui/button";
 import ModalDialog from "./ModalDialog";
 
 export default function PaymentButton({ course, author }) {
@@ -12,10 +12,8 @@ export default function PaymentButton({ course, author }) {
     <>
       <div className="mt-4">
         <Button
-          className="btn btn-primary w-100 heading"
-          style={{
-            fontSize: 25,
-          }}
+          className="w-100 heading single-course-action"
+          size="lg"
           onClick={toggle}
         >
           Buy now

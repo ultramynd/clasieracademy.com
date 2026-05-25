@@ -1,15 +1,17 @@
 import React from "react";
-import { Card, CardBody, CardFooter, CardImg } from "reactstrap";
+import { CardImg } from "reactstrap";
 import _ from "lodash";
 import Link from "next/link";
 import classnames from "classnames";
+import { Badge } from "components/ui/badge";
+import { Card, CardContent, CardFooter } from "components/ui/card";
 
 const coursePlaceholder = "/images/course-placeholder.svg";
 const authorPlaceholder = "/images/avatar-placeholder.svg";
 
 export default function CardCourse({ course, author, preview = false }) {
   const CourseCardBody = () => (
-    <CardBody className="p-0">
+    <CardContent className="p-0">
       <div>
         <div className="text-right m-0" style={{ position: "relative" }}>
           <CardImg
@@ -62,17 +64,18 @@ export default function CardCourse({ course, author, preview = false }) {
           <div>
             {course.course_tags &&
               course.course_tags.map((tag, index) => (
-                <span
+                <Badge
                   key={index}
-                  className="badge badge-xs badge-secondary mr-1"
+                  variant="secondary"
+                  className="mr-1 mb-1"
                 >
                   {tag}
-                </span>
+                </Badge>
               ))}
           </div>
         </div>
       </div>
-    </CardBody>
+    </CardContent>
   );
 
   const CourseCardFooter = () => (

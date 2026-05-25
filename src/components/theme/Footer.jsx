@@ -1,6 +1,7 @@
 import Icons from "components/common/Icons";
 import Link from "next/link";
 import React from "react";
+import { Button } from "components/ui/button";
 import { socialIcons, footer, siteMetadata } from "../../../site.config";
 
 export default function Footer({ litle }) {
@@ -80,13 +81,15 @@ export default function Footer({ litle }) {
                       </div>
                     </div>
                     <div className="col-lg-12">
-                      <input
+                      <Button
                         type="submit"
                         id="submitsubscribe"
                         name="send"
-                        className="btn btn-soft-primary btn-block"
-                        value="Subscribe"
-                      />
+                        variant="outline"
+                        className="w-100"
+                      >
+                        Subscribe
+                      </Button>
                     </div>
                   </div>
                 </form>

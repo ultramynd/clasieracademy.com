@@ -1,6 +1,6 @@
 import Icons from "components/common/Icons";
 import React from "react";
-import { Modal, ModalHeader, ModalBody, ModalFooter, Button } from "reactstrap";
+import { Modal, ModalHeader, ModalBody } from "reactstrap";
 import CustomPayment from "./methods/CustomPayment";
 
 export default function ModalDialog({ isOpen, toggle, course, author }) {
