@@ -50,11 +50,24 @@ class Navbar extends Component {
       <header
         id="topnav"
         className={
-          this.state.sticky ? "bg-light sticky nav-sticky" : "sticky py-1"
+          this.state.sticky ? "bg-light sticky nav-sticky" : "sticky"
         }
         style={{ zIndex: 1001 }}
       >
-        <div className="container">
+        <div className="clasier-top-strip">
+          <div className="container d-flex align-items-center justify-content-between">
+            <div>
+              <span className="mr-4">+234 706 432 9058</span>
+              <span>hello@clasieracademy.com</span>
+            </div>
+            <div>
+              <a href="#reserve-seat">Purchase Now</a>
+              <a href="#overview">About</a>
+              <a href="/courses">Courses</a>
+            </div>
+          </div>
+        </div>
+        <div className="container clasier-main-nav">
           <div className="d-flex float-left" style={{ height: 60 }}>
             <div className="logo my-auto">
               <Link href="/">

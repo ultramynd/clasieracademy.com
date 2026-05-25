@@ -23,22 +23,21 @@ const features = [
   },
 ];
 
-const modules = [
-  "Strategic Positioning for Competitive Advantage",
-  "Crafting a Compelling Professional or Business Narrative",
-  "Influence-Driven Communication",
-  "Authority Building and Personal or Corporate Branding",
-  "Messaging That Converts",
-  "Real-World Application and Live Refinement",
+const collections = [
+  ["curriculum-intro.jpg", "Strategic Positioning", true],
+  ["why-positioning.jpg", "Narrative Intelligence"],
+  ["details-room.jpg", "Influence Communication"],
+  ["why-now-bg.jpg", "Messaging That Converts"],
+  ["reserve-side.png", "Live Refinement"],
 ];
 
 const facilitators = [
-  ["Narrative Intelligence", "Sam Gaza Timothy", "Chief Publishing Officer, Clasier Publishing Ltd."],
-  ["Persuasion Psychology", "Akinwumi Akinola", "Behavioural Insights Lead, Policy Innovation Centre"],
-  ["Digital Mastery", "Msen Nabo", "Communications Officer, International IDEA"],
-  ["AI Hacks", "Dr. Kunle Kakanfo", "Founder, AI for Social Impact (AI4SI)"],
-  ["Marketing and Advertising", "Adaeze Ihuoma", "Head, Marketing Department, Hall7 Real Estate"],
-  ["Media Advantage", "Kayode Kikiolu", "Presenter, Channels TV"],
+  ["curriculum-intro.jpg", "Narrative Intelligence", "Sam Gaza Timothy", "Chief Publishing Officer, Clasier Publishing Ltd."],
+  ["why-positioning.jpg", "Persuasion Psychology", "Akinwumi Akinola", "Behavioural Insights Lead, Policy Innovation Centre"],
+  ["details-room.jpg", "Digital Mastery", "Msen Nabo", "Communications Officer, International IDEA"],
+  ["why-now-bg.jpg", "AI Hacks", "Dr. Kunle Kakanfo", "Founder, AI for Social Impact (AI4SI)"],
+  ["reserve-side.png", "Marketing and Advertising", "Adaeze Ihuoma", "Head, Marketing Department, Hall7 Real Estate"],
+  ["hero-edge.jpg", "Media Advantage", "Kayode Kikiolu", "Presenter, Channels TV"],
 ];
 
 const outcomes = [
@@ -60,7 +59,7 @@ export default function AcademyLanding() {
         />
         <div className="academy-showcase-card">
           <span className="academy-label">The Communication Edge</span>
-          <h1>How winning professionals and brands position to outperform.</h1>
+          <h1>Position to outperform.</h1>
           <p>
             A two-day intensive in Abuja for communication professionals,
             founders, teams, and growth-minded startups ready to lead, influence,
@@ -69,9 +68,6 @@ export default function AcademyLanding() {
           <div className="academy-actions">
             <a href="#reserve-seat" className="btn btn-primary">
               Reserve your seat
-            </a>
-            <a href="#curriculum" className="academy-text-link">
-              Explore curriculum <Icons icon="arrowRight" className="ml-2" />
             </a>
           </div>
           <div className="academy-sale-ribbon">50 seats</div>
@@ -103,29 +99,25 @@ export default function AcademyLanding() {
           <div className="academy-section-head">
             <div>
               <span className="academy-kicker">Curriculum</span>
-              <h2>Practical, high-level insight you can apply immediately.</h2>
+              <h2>Trending Collection</h2>
             </div>
             <a href="#reserve-seat" className="btn btn-light">
-              Register now
+              View all courses
             </a>
           </div>
 
           <div className="academy-collection">
             <article className="academy-collection-main">
-              <img
-                src={academyAsset("curriculum-intro.jpg")}
-                alt="A workshop session focused on audience strategy"
-              />
+              <img src={academyAsset(collections[0][0])} alt={collections[0][1]} />
               <div>
-                <span>Six modules</span>
-                <h3>Move from visible to preferred.</h3>
+                <h3>{collections[0][1]}</h3>
               </div>
             </article>
             <div className="academy-module-grid">
-              {modules.slice(0, 4).map((module, index) => (
-                <article className="academy-module-card" key={module}>
-                  <span>{String(index + 1).padStart(2, "0")}</span>
-                  <h3>{module}</h3>
+              {collections.slice(1).map(([image, title]) => (
+                <article className="academy-module-card" key={title}>
+                  <img src={academyAsset(image)} alt={title} />
+                  <h3>{title}</h3>
                 </article>
               ))}
             </div>
@@ -198,12 +190,15 @@ export default function AcademyLanding() {
             </div>
           </div>
           <div className="row">
-            {facilitators.map(([topic, name, role]) => (
+            {facilitators.map(([image, topic, name, role]) => (
               <div className="col-lg-4 col-md-6 col-12" key={topic}>
                 <article className="academy-facilitator-card">
-                  <span>{topic}</span>
-                  <h3>{name}</h3>
-                  <p>{role}</p>
+                  <img src={academyAsset(image)} alt={topic} />
+                  <div>
+                    <span>{topic}</span>
+                    <h3>{name}</h3>
+                    <p>{role}</p>
+                  </div>
                 </article>
               </div>
             ))}
