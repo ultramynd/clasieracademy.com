@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "compile-sass": "node-sass src/assets/scss/style.scss src/assets/css/style.css --output-style compressed -w"
+    "compile-sass": "sass src/assets/scss/style.scss src/assets/css/style.css --style compressed --watch"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.4.0",
@@ -21,14 +21,9 @@
     "firebase": "^9.21.0",
     "firebaseui": "^6.0.2",
     "html-react-parser": "^3.0.16",
-    "imagemin-optipng": "^8.0.0",
     "lodash": "^4.17.21",
-    "lqip-loader": "^2.2.1",
     "moment": "^2.29.4",
     "next": "^13.3.4",
-    "next-compose-plugins": "^2.2.1",
-    "next-optimized-images": "^2.6.2",
-    "node-sass": "^8.0.0",
     "nprogress": "^0.2.0",
     "perfect-scrollbar": "^1.5.5",
     "postcss-preset-env": "^8.3.2",

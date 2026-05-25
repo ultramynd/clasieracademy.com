@@ -1,6 +1,3 @@
-const withPlugins = require("next-compose-plugins");
-const optimizedImages = require("next-optimized-images");
-
 const nextConfig = {
   publicRuntimeConfig: {
     FIREBASE_API_KEY: process.env.FIREBASE_API_KEY,
@@ -13,4 +10,4 @@ const nextConfig = {
   },
 };
 
-module.exports = withPlugins([optimizedImages], nextConfig);
+module.exports = nextConfig;

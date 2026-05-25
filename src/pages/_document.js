@@ -6,7 +6,7 @@ export default class MyDocument extends Document {
     return (
       <Html lang={siteMetadata.language}>
         <Head>
-          <link rel="shortcut icon" href="/static/favicon.png" />
+          <link rel="shortcut icon" href="/favicon.png" />
         </Head>
         <body id="body">
           <Main />
