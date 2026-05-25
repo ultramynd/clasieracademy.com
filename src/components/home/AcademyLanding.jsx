@@ -1,4 +1,7 @@
 import Icons from "components/common/Icons";
+import { Badge } from "components/ui/badge";
+import { Button } from "components/ui/button";
+import { Card, CardContent } from "components/ui/card";
 import Link from "next/link";
 import React from "react";
 
@@ -128,20 +131,22 @@ export default function AcademyLanding() {
           alt="A confident professional speaking with authority"
           className="academy-showcase-image"
         />
-        <div className="academy-showcase-card">
-          <span className="academy-label">The Communication Edge</span>
+        <Card className="academy-showcase-card">
+          <Badge variant="default" className="academy-label">
+            The Communication Edge
+          </Badge>
           <h1>How Winning Professionals & Brands Position to Outperform Everyone Else</h1>
           <p>
             A two-day, high-impact training for communication professionals and
             startups ready to lead, influence, and win.
           </p>
           <div className="academy-actions">
-            <a href="#reserve-seat" className="btn btn-primary">
-              Reserve Your Seat Now
-            </a>
+            <Button asChild variant="hero">
+              <a href="#reserve-seat">Reserve Your Seat Now</a>
+            </Button>
           </div>
           <div className="academy-sale-ribbon">50 seats</div>
-        </div>
+        </Card>
       </section>
 
       <section className="academy-feature-row">
@@ -149,7 +154,7 @@ export default function AcademyLanding() {
           <div className="row">
             {features.map((feature) => (
               <div className="col-md-4 col-12" key={feature.title}>
-                <article className="academy-feature">
+                <Card className="academy-feature">
                   <span>
                     <Icons icon={feature.icon} />
                   </span>
@@ -157,7 +162,7 @@ export default function AcademyLanding() {
                     <h2>{feature.title}</h2>
                     <p>{feature.text}</p>
                   </div>
-                </article>
+                </Card>
               </div>
             ))}
           </div>
@@ -168,7 +173,9 @@ export default function AcademyLanding() {
         <div className="container">
           <div className="row align-items-start">
             <div className="col-lg-7 col-12">
-              <span className="academy-kicker">The positioning gap</span>
+              <Badge variant="default" className="academy-kicker">
+                The positioning gap
+              </Badge>
               <h2>You are good at what you do, but are you positioned to win?</h2>
               <div className="academy-copy-flow">
                 {storyParagraphs.map((paragraph) => (
@@ -177,8 +184,10 @@ export default function AcademyLanding() {
               </div>
             </div>
             <div className="col-lg-5 col-12 mt-4 mt-lg-0">
-              <aside className="academy-side-panel">
-                <span className="academy-kicker">This experience is for you, if you want to...</span>
+              <Card className="academy-side-panel">
+                <Badge variant="default" className="academy-kicker">
+                  This experience is for you, if you want to...
+                </Badge>
                 <ul className="academy-check-list">
                   {experienceBullets.map((item) => (
                     <li key={item}>
@@ -192,10 +201,10 @@ export default function AcademyLanding() {
                   professionals, teams, and organizations for a transformational,
                   two-day training.
                 </p>
-                <a href="#reserve-seat" className="btn btn-primary">
-                  Reserve Your Seat Now
-                </a>
-              </aside>
+                <Button asChild>
+                  <a href="#reserve-seat">Reserve Your Seat Now</a>
+                </Button>
+              </Card>
             </div>
           </div>
         </div>
@@ -203,7 +212,9 @@ export default function AcademyLanding() {
 
       <section className="academy-cta-band academy-promise">
         <div className="container">
-          <span className="academy-kicker">Our Promise</span>
+          <Badge variant="default" className="academy-kicker">
+            Our Promise
+          </Badge>
           <h2>The Communication Edge is not another generic training.</h2>
           <p>
             This is a strategic positioning experience designed to help you
@@ -211,10 +222,12 @@ export default function AcademyLanding() {
           </p>
           <div className="academy-promise-grid">
             {promiseBullets.map((item) => (
-              <article key={item}>
+              <Card key={item}>
+                <CardContent>
                 <Icons icon="star" />
                 <p>{item}</p>
-              </article>
+                </CardContent>
+              </Card>
             ))}
           </div>
         </div>
@@ -224,21 +237,23 @@ export default function AcademyLanding() {
         <div className="container">
           <div className="academy-section-head">
             <div>
-              <span className="academy-kicker">What You'll Learn</span>
+              <Badge variant="default" className="academy-kicker">
+                What You'll Learn
+              </Badge>
               <h2>Practical, high-level insights for market advantage.</h2>
             </div>
-            <a href="#reserve-seat" className="btn btn-light">
-              Reserve seat
-            </a>
+            <Button asChild variant="outline">
+              <a href="#reserve-seat">Reserve seat</a>
+            </Button>
           </div>
 
           <div className="academy-learning-grid">
             {learningTopics.map((topic, index) => (
-              <article className="academy-learn-card" key={topic.title}>
+              <Card className="academy-learn-card" key={topic.title}>
                 <span>{String(index + 1).padStart(2, "0")}</span>
                 <h3>{topic.title}</h3>
                 <p>{topic.text}</p>
-              </article>
+              </Card>
             ))}
           </div>
         </div>
@@ -251,16 +266,18 @@ export default function AcademyLanding() {
               <img src={academyAsset("curriculum-intro.jpg")} alt="A focused professional learning session" />
             </div>
             <div className="col-lg-7 col-12 mt-4 mt-lg-0">
-              <span className="academy-kicker">Who This Is For</span>
+              <Badge variant="default" className="academy-kicker">
+                Who This Is For
+              </Badge>
               <h2>If success depends on how well you communicate and position value, you should be in this room.</h2>
               <div className="academy-audience-list">
                 {audience.map((item) => (
                   <span key={item}>{item}</span>
                 ))}
               </div>
-              <a href="#reserve-seat" className="btn btn-primary">
-                Reserve Your Seat Now
-              </a>
+              <Button asChild>
+                <a href="#reserve-seat">Reserve Your Seat Now</a>
+              </Button>
             </div>
           </div>
         </div>
@@ -270,18 +287,20 @@ export default function AcademyLanding() {
         <div className="container">
           <div className="row align-items-start">
             <div className="col-lg-6 col-12">
-              <span className="academy-kicker">Event Details</span>
+              <Badge variant="default" className="academy-kicker">
+                Event Details
+              </Badge>
               <h2>Lead, influence, and win in a curated Abuja room.</h2>
               <div className="academy-event-list">
                 {eventDays.map(([day, date, time, venue]) => (
-                  <article key={day}>
+                  <Card key={day}>
                     <strong>{day}</strong>
                     <div>
                       <span>{date}</span>
                       <span>{time}</span>
                       <span>{venue}</span>
                     </div>
-                  </article>
+                  </Card>
                 ))}
               </div>
             </div>
@@ -309,21 +328,23 @@ export default function AcademyLanding() {
         <div className="container">
           <div className="academy-section-head">
             <div>
-              <span className="academy-kicker">Training Curriculum</span>
+              <Badge variant="default" className="academy-kicker">
+                Training Curriculum
+              </Badge>
               <h2>Learn from operators across narrative, persuasion, digital, AI, media, and customer influence.</h2>
             </div>
           </div>
           <div className="row">
             {facilitators.map(([image, topic, name, role]) => (
               <div className="col-lg-3 col-md-6 col-12" key={`${topic}-${name}`}>
-                <article className="academy-facilitator-card">
+                <Card className="academy-facilitator-card">
                   <img src={academyAsset(image)} alt={topic} />
                   <div>
                     <span>{topic}</span>
                     <h3>{name}</h3>
                     <p>{role}</p>
                   </div>
-                </article>
+                </Card>
               </div>
             ))}
           </div>
@@ -334,7 +355,9 @@ export default function AcademyLanding() {
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6 col-12">
-              <span className="academy-kicker">Why This Matters Now</span>
+              <Badge variant="default" className="academy-kicker">
+                Why This Matters Now
+              </Badge>
               <h2>The world, and the marketplace with it, is evolving fast.</h2>
               <p>
                 Attention is getting thinner. Competition is skyrocketing.
@@ -368,7 +391,9 @@ export default function AcademyLanding() {
               />
             </div>
             <div className="col-lg-7 col-12 mt-4 mt-lg-0">
-              <span className="academy-kicker">What You'll Walk Away With</span>
+              <Badge variant="default" className="academy-kicker">
+                What You'll Walk Away With
+              </Badge>
               <h2>The tools to stop blending in and start standing out.</h2>
               <div className="academy-outcome-list">
                 {outcomes.map((outcome) => (
@@ -387,7 +412,9 @@ export default function AcademyLanding() {
         <div className="container">
           <div className="academy-reserve-panel">
             <div>
-              <span className="academy-kicker">Register Now</span>
+              <Badge variant="default" className="academy-kicker">
+                Register Now
+              </Badge>
               <h2>The Communication Edge is your competitive advantage.</h2>
               <p>
                 Do not let another year go by while your company remains
@@ -404,9 +431,9 @@ export default function AcademyLanding() {
                 </ul>
               </div>
             </div>
-            <Link href="/register" className="btn btn-primary">
-              Register & Reserve Your Seat Now
-            </Link>
+            <Button asChild size="lg">
+              <Link href="/register">Register & Reserve Your Seat Now</Link>
+            </Button>
           </div>
         </div>
       </section>
