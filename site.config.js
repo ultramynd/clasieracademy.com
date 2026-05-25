@@ -70,10 +70,10 @@ const navbarLinks = [
 ];
 
 const hero = {
-  mainTitle: "Learn the systems behind better books.",
+  mainTitle: "Practical publishing courses from the Clasier team.",
   subTitle:
-    "Clasier Academy turns publishing experience into practical courses for authors, creators, editors, and book teams.",
-  searchPlaceholder: "Search publishing skills",
+    "Learn the writing, editing, positioning, and launch systems behind stronger books.",
+  searchPlaceholder: "Search writing, publishing, launch...",
   VimeoVideoId: "208266874",
 };
 

@@ -6,6 +6,8 @@ import Icons from "components/common/Icons";
 import { CardImg } from "reactstrap";
 import Link from "next/link";
 
+const coursePlaceholder = "/images/course-placeholder.svg";
+
 export default function BestCourses({ courses }) {
   return (
     <>
@@ -42,9 +44,11 @@ export default function BestCourses({ courses }) {
               <Link href={`/${course.course_short_link || ""}`}>
                 <CardImg
                   className="rounded-md shadow-md"
-                  src={course.course_pic_url || "/images/noPic.png"}
+                  alt={course.course_title}
+                  src={coursePlaceholder}
                   onError={(event) => {
-                    event.currentTarget.src = "/images/noPic.png";
+                    event.currentTarget.onerror = null;
+                    event.currentTarget.src = coursePlaceholder;
                   }}
                 />
               </Link>

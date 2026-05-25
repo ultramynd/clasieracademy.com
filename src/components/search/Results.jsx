@@ -6,6 +6,8 @@ import React from "react";
 import { Card, CardBody, CardImg } from "reactstrap";
 import { search } from "../../../site.config";
 
+const coursePlaceholder = "/images/course-placeholder.svg";
+
 export default function Results({ results }) {
   const getPicUrl = (item) => {
     let id = "";
@@ -51,9 +53,11 @@ export default function Results({ results }) {
               <div className="d-block d-md-flex">
                 <CardImg
                   className="img-result-container"
-                  src={element.course.course_pic_url || "/images/noPic.png"}
+                  alt={element.course.course_title}
+                  src={coursePlaceholder}
                   onError={(event) => {
-                    event.currentTarget.src = "/images/noPic.png";
+                    event.currentTarget.onerror = null;
+                    event.currentTarget.src = coursePlaceholder;
                   }}
                 />
                 <div className="py-2 p-md-0">
@@ -82,6 +86,7 @@ export default function Results({ results }) {
                 <CardImg
                   id={`image-${element.item._id}`}
                   className="img-result-container"
+                  alt={element.item.item_title}
                   src={getPicUrl(element.item) || "/images/noPic.png"}
                   onError={(event) => {
                     event.currentTarget.src = "/images/noPic.png";

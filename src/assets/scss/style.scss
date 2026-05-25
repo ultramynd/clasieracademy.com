@@ -21,7 +21,6 @@
 @import "dark/variables";
 @import "placeholder";
 @import "plugin-perfect-scrollbar";
-@import "clasier";
 
 .dark-mode {
   color: $dark;
@@ -35,6 +34,8 @@
   @import "dark/helper";
   @import "dark/menu";
 }
+
+@import "clasier";
 
 .svg-inline--fa {
   width: 1em !important;

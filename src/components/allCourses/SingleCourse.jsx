@@ -4,6 +4,9 @@ import _ from "lodash";
 import Link from "next/link";
 import classnames from "classnames";
 
+const coursePlaceholder = "/images/course-placeholder.svg";
+const authorPlaceholder = "/images/avatar-placeholder.svg";
+
 export default function CardCourse({ course, author, preview = false }) {
   const CourseCardBody = () => (
     <CardBody className="p-0">
@@ -11,9 +14,11 @@ export default function CardCourse({ course, author, preview = false }) {
         <div className="text-right m-0" style={{ position: "relative" }}>
           <CardImg
             className="rounded-top"
-            src={course.course_pic_url || "/images/noPic.png"}
+            alt={course.course_title}
+            src={coursePlaceholder}
             onError={(event) => {
-              event.currentTarget.src = "/images/noPic.png";
+              event.currentTarget.onerror = null;
+              event.currentTarget.src = coursePlaceholder;
             }}
           />
           {!preview && (
@@ -75,9 +80,10 @@ export default function CardCourse({ course, author, preview = false }) {
       <img
         alt={author.name}
         className="avatar avatar-md-sm rounded-circle shadow-md"
-        src={author.user_pic || "/images/noPic.png"}
+        src={authorPlaceholder}
         onError={(event) => {
-          event.currentTarget.src = "/images/noPic.png";
+          event.currentTarget.onerror = null;
+          event.currentTarget.src = authorPlaceholder;
         }}
       />
       <div className="ml-2">

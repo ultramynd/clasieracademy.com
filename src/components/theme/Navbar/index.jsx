@@ -62,15 +62,11 @@ class Navbar extends Component {
                   className={
                     this.state.sticky
                       ? "clasier-brand clasier-brand-dark"
-                      : "clasier-brand clasier-brand-light"
+                      : "clasier-brand clasier-brand-dark"
                   }
                 >
                   <img
-                    src={
-                      this.state.sticky
-                        ? "/images/brands/clasier_academy.svg"
-                        : "/images/brands/clasier-squircle.svg"
-                    }
+                    src="/images/brands/clasier_academy.svg"
                     alt={siteMetadata.title}
                   />
                   <span>{siteMetadata.title}</span>

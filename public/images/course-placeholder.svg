@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Clasier Academy course artwork</title>
+  <desc id="desc">A simple branded placeholder for course images.</desc>
+  <rect width="1200" height="720" fill="#f8f7fb"/>
+  <rect x="80" y="72" width="1040" height="576" rx="28" fill="#ffffff" stroke="#e6dff0" stroke-width="2"/>
+  <circle cx="970" cy="160" r="64" fill="#f3edf8"/>
+  <circle cx="198" cy="542" r="96" fill="#eef8f9"/>
+  <path d="M319 213h414v34H319zM319 292h560v22H319zM319 342h486v22H319zM319 392h362v22H319z" fill="#251a31"/>
+  <path d="M812 508c-48 0-87-39-87-87s39-87 87-87 87 39 87 87-39 87-87 87Zm-16-121v79l60-39-60-40Z" fill="#710096"/>
+  <path d="M222 196c0-35 28-63 63-63h4l72 167h-47l-15-36h-68l-14 36h-48l53-104Zm23 31h41l-20-50-21 50Z" fill="#710096"/>
+  <text x="319" y="515" font-family="Inter, Arial, sans-serif" font-size="32" font-weight="700" fill="#710096">Clasier Academy</text>
+</svg>

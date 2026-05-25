@@ -11,7 +11,7 @@ const learningTracks = [
 
 export default function Partners() {
   return (
-    <section className="mt-4 py-3 border-bottom border-top">
+    <section className="academy-track-band">
       <div className="container">
         <div className="row justify-content-center academy-track-strip">
           {learningTracks.map((track) => (

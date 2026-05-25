@@ -9,6 +9,8 @@ import Icons from "components/common/Icons";
 import { getShortLink } from "utils/courses";
 import { singleCourse } from "../../../site.config";
 
+const coursePlaceholder = "/images/course-placeholder.svg";
+
 function Banner({ course, authors, paymentReports, items }) {
   let currentReport = null;
   // if (paymentReports) {
@@ -28,13 +30,7 @@ function Banner({ course, authors, paymentReports, items }) {
   const pic_url = author.user_pic ? author.user_pic : "/images/noPic.png";
 
   return (
-    <section
-      className="px-0 py-5 m-0"
-      style={{
-        backgroundColor: "#1a274e",
-        color: "whi_te",
-      }}
-    >
+    <section className="px-0 py-5 m-0 single-course-banner">
       <div className="container mt-5">
         <div className="row pt-5 d-flex" style={{ zIndex: 1 }}>
           <div className="col-12 col-md-6">
@@ -51,9 +47,10 @@ function Banner({ course, authors, paymentReports, items }) {
                   position: "relative",
                   boxShadow: "0 2px 55px rgba(47,85,212,0.3) !important",
                 }}
-                src={course.course_pic_url || "/images/noPic.png"}
+                src={course.course_pic_url || coursePlaceholder}
                 onError={(event) => {
-                  event.currentTarget.src = "/images/noPic.png";
+                  event.currentTarget.onerror = null;
+                  event.currentTarget.src = coursePlaceholder;
                 }}
               ></CardImg>
             </div>
@@ -62,7 +59,6 @@ function Banner({ course, authors, paymentReports, items }) {
             <div className="title-heading">
               <h1
                 className="h2 my-4 mt-md-0 text-shadow"
-                style={{ color: "#fff" }}
               >
                 {_.upperFirst(course.course_title)}
               </h1>
@@ -70,7 +66,6 @@ function Banner({ course, authors, paymentReports, items }) {
                 className="mb-4 mr-5"
                 data-aos="fade-up"
                 data-aos-delay="200"
-                style={{ color: "#fff" }}
               >
                 {_.upperFirst(course.course_description)}
               </p>
@@ -86,14 +81,8 @@ function Banner({ course, authors, paymentReports, items }) {
                   }}
                 />
                 <div className="ml-2">
-                  <h6
-                    className="mb-0 text-shadow"
-                    style={{ color: "#fff" }}
-                  >{`${author.user_name}`}</h6>
-                  <p
-                    className="small my-0 text-muted"
-                    style={{ color: "#fff" }}
-                  >
+                  <h6 className="mb-0 text-shadow">{`${author.user_name}`}</h6>
+                  <p className="small my-0 text-muted">
                     {author.short_description || ""}
                   </p>
                 </div>
