@@ -62,7 +62,7 @@ function AuthMenu(props) {
                   target="_blank"
                   onClick={openRegisterPage}
                 >
-                  Create account
+                  Get Started
                 </a>
               </div>
             ) : (

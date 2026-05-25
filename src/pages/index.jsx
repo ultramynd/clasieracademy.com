@@ -1,34 +1,12 @@
 import Layout from "components/Layout";
 import SEO from "components/common/Seo";
-import Hero from "components/home/Hero";
-import Partners from "components/home/Partners";
-import PopularCourses from "components/home/PopularCourses";
-import Invitation from "components/common/Invitation";
+import AcademyLanding from "components/home/AcademyLanding";
 
-import { getAllAuthors, getAllCourses } from "utils/courses";
-
-export default function Index({ courses, authors }) {
+export default function Index() {
   return (
     <Layout>
-      <SEO title="Home" />
-      <Hero />
-      <Partners />
-      <section className="mb-5">
-        <PopularCourses courses={courses} authors={authors} />
-      </section>
-      <Invitation />
+      <SEO title="The Communication Edge" />
+      <AcademyLanding />
     </Layout>
   );
-}
-
-export async function getStaticProps() {
-  const courses = await getAllCourses();
-  const authors = await getAllAuthors(courses);
-
-  return {
-    props: {
-      courses,
-      authors,
-    },
-  };
 }
