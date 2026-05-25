@@ -82,19 +82,19 @@ function AuthorData(props) {
 
               <SingleField
                 disabled
-                label="Nombre de cuenta"
+                label="Account name"
                 defaultValue={`@${profile.user_name}`}
                 isEditing={editable}
               />
               <SingleField
                 disabled
-                label="Correo electronico"
+                label="Email address"
                 defaultValue={profile.email}
                 isEditing={editable}
               />
               <SingleField
                 name="name"
-                label="Nombre completo"
+                label="Full name"
                 defaultValue={profile.name}
                 isEditing={editable}
                 onChange={nameChangedHandler}

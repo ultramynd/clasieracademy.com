@@ -62,7 +62,7 @@ function AuthMenu(props) {
                   target="_blank"
                   onClick={openRegisterPage}
                 >
-                  Registrarme...
+                  Create account
                 </a>
               </div>
             ) : (
@@ -76,7 +76,7 @@ function AuthMenu(props) {
                   target="_blank"
                   onClick={openLoginPage}
                 >
-                  Iniciar sesion
+                  Sign in
                 </a>
               </div>
             ) : (
@@ -109,14 +109,14 @@ function AuthMenu(props) {
                 <li className="has-submenu">
                   <Link href={`/user?id=${user.uid}`}>
                     <Icons icon="user" className="mr-2" />
-                    Mi perfil
+                    My profile
                   </Link>
                 </li>
 
                 <li className="has-submenu">
                   <a href="#!" onClick={handleLogout}>
                     <Icons icon="logout" className="mr-2" />
-                    logout
+                    Log out
                   </a>
                 </li>
               </ul>

@@ -9,7 +9,7 @@ import { getAllAuthors, getAllCourses } from "utils/courses";
 export default function Courses({ courses, authors }) {
   return (
     <Layout>
-      <SEO title="All posts" />
+      <SEO title="Courses" />
       <Header />
       <BestCourses courses={courses} />
       <AllCourses courses={courses} authors={authors} />

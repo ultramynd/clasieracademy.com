@@ -12,30 +12,30 @@ export default class Certificates extends React.Component {
           <CardHeader className="py-1 px-2">
             <CardTitle tag="h6" className="m-0">
               <Icons icon="books" className="mr-2" />
-              Certificados
+              Certificates
             </CardTitle>
           </CardHeader>
-          <CardBody>Sin certificados que mostrar...</CardBody>
+          <CardBody>No certificates to show yet.</CardBody>
         </Card>
 
         <Card className="mt-4 shadow-md">
           <CardHeader className="py-1 px-2">
             <CardTitle tag="h6" className="m-0">
               <Icons icon="books" className="mr-2" />
-              Cursos
+              Courses
             </CardTitle>
           </CardHeader>
-          <CardBody>Sin certificados que mostrar...</CardBody>
+          <CardBody>No courses to show yet.</CardBody>
         </Card>
 
         <Card className="mt-4 shadow-md">
           <CardHeader className="py-1 px-2">
             <CardTitle tag="h6" className="m-0">
               <Icons icon="books" className="mr-2" />
-              Conferencias
+              Sessions
             </CardTitle>
           </CardHeader>
-          <CardBody>Sin certificados que mostrar...</CardBody>
+          <CardBody>No sessions to show yet.</CardBody>
         </Card>
       </>
     );

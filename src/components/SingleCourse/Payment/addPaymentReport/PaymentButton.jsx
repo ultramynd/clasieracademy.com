@@ -18,7 +18,7 @@ export default function PaymentButton({ course, author }) {
           }}
           onClick={toggle}
         >
-          Comprar ahora!
+          Buy now
           <Icons icon="arrowRight" className="ml-2 arrow1" />
         </Button>
       </div>

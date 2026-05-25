@@ -23,7 +23,7 @@ export default function MoreCourses({ courses, course, authors }) {
         <div className="container mt-5 mb-0">
           <div className="section-title mb-0">
             <h3 className="my-0">
-              Mas cursos de <Link href=".">{`${author.user_name}`}</Link>:
+              More courses from <Link href=".">{`${author.user_name}`}</Link>:
             </h3>
           </div>
         </div>

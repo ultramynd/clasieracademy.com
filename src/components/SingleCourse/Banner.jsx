@@ -25,7 +25,7 @@ function Banner({ course, authors, paymentReports, items }) {
     (author) => author.id === course.course_author_id
   );
 
-  const pic_url = author.user_pic ? author.user_pic : "/img/noPic.png";
+  const pic_url = author.user_pic ? author.user_pic : "/images/noPic.png";
 
   return (
     <section
@@ -51,7 +51,10 @@ function Banner({ course, authors, paymentReports, items }) {
                   position: "relative",
                   boxShadow: "0 2px 55px rgba(47,85,212,0.3) !important",
                 }}
-                src={course.course_pic_url}
+                src={course.course_pic_url || "/images/noPic.png"}
+                onError={(event) => {
+                  event.currentTarget.src = "/images/noPic.png";
+                }}
               ></CardImg>
             </div>
           </div>
@@ -78,6 +81,9 @@ function Banner({ course, authors, paymentReports, items }) {
                   alt={author.name}
                   className="avatar avatar-md-sm rounded-circle shadow"
                   src={pic_url}
+                  onError={(event) => {
+                    event.currentTarget.src = "/images/noPic.png";
+                  }}
                 />
                 <div className="ml-2">
                   <h6

@@ -2,21 +2,21 @@
 // variables.scss
 //
 
-@import url("https://fonts.googleapis.com/css?family=Nunito:300,400,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Merriweather:wght@700;900&display=swap");
 
 // Color
 $white: #ffffff;
 
-$primary: #2f55d4; //2f55d4
-$secondary: #5a6d90;
+$primary: #7c3aed;
+$secondary: #005b82;
 $success: #2eca8b;
-$warning: #f17425;
+$warning: #f59e0b;
 $info: #17a2b8;
 $danger: #e43f52;
-$dark: #3c4858;
-$black: #161c2d;
-$muted: #8492a6;
-$light: #f7f7f7;
+$dark: #21172d;
+$black: #05030a;
+$muted: #766a86;
+$light: #f7f2ff;
 
 // Gray
 $gray-100: #f8f9fa;
@@ -41,8 +41,8 @@ $footer: lighten($black, 6%);
 // Base font
 $font-size-base: 16px;
 
-$font-family-base: "Nunito", sans-serif;
-$font-family-secondary: "Nunito", sans-serif;
+$font-family-base: "Inter", sans-serif;
+$font-family-secondary: "Merriweather", serif;
 
 //Color Picker/Switcher
 $default: #2f55d4;

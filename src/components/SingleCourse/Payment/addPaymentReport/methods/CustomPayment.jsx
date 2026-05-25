@@ -104,14 +104,14 @@ export default function CustomPayment({ course, author, parentToggle }) {
       <Modal isOpen={openModal} toggle={toggle} className="modal-lg">
         <ModalHeader toggle={toggle}>
           <Icons icon="car" className="mr-2" />
-          Comprar curso
+          Buy course
         </ModalHeader>
         <ModalBody>
           <div className="container">
             <div className="row">
               <div className="col-xs-12 col-lg-7">
                 <FormGroup>
-                  <label className="h6">Imagen de comprovacion:</label>
+                  <label className="h6">Payment proof image:</label>
                   <Row>
                     <Col xs="4" className="m-0">
                       <SinglePic
@@ -139,7 +139,7 @@ export default function CustomPayment({ course, author, parentToggle }) {
                     </Col>
                   </Row>
 
-                  <label className="h6 mt-4">Description del pago:</label>
+                  <label className="h6 mt-4">Payment description:</label>
                   <Input
                     className="form-control"
                     name={"name"}

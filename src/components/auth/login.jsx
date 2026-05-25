@@ -41,8 +41,8 @@ export default function login() {
                 />
               </Col>
               <Col xs="12" lg="6" className="py-2 px-4 text-center">
-                <h1 className="mb-4">Ingresar con:</h1>
-                <p>Crea una cuenta o ingresa con alguno de estos metodos:</p>
+                <h1 className="mb-4">Sign in</h1>
+                <p>Create an account or continue with one of these methods:</p>
                 <StyledFirebaseAuth
                   uiConfig={{
                     signInFlow: "popup",
@@ -59,8 +59,8 @@ export default function login() {
                   firebaseAuth={firebase.auth()}
                 />
                 <small className="text-muted mt-4">
-                  <small className="text-dark">Importante: </small>ingresando a
-                  nuestra plataforma aceptas los terminos y condiciones de uso.
+                  <small className="text-dark">Important: </small>by signing in,
+                  you accept the platform terms and conditions.
                 </small>
               </Col>
             </Row>

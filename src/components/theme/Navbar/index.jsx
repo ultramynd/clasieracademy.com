@@ -1,4 +1,3 @@
-import Icons from "components/common/Icons";
 import Link from "next/link";
 import React, { Component } from "react";
 import { Collapse } from "reactstrap";
@@ -59,25 +58,23 @@ class Navbar extends Component {
           <div className="d-flex float-left" style={{ height: 60 }}>
             <div className="logo my-auto">
               <Link href="/">
-                <h4
+                <span
                   className={
                     this.state.sticky
-                      ? "m-0 text-dark"
-                      : isDark
-                      ? "m-0 text-dark"
-                      : "m-0 white"
+                      ? "clasier-brand clasier-brand-dark"
+                      : "clasier-brand clasier-brand-light"
                   }
                 >
-                  <Icons
-                    icon="code"
-                    className="mr-2 bg-primary p-1 rounded white fa-1x"
-                    color="#fff"
+                  <img
+                    src={
+                      this.state.sticky
+                        ? "/images/brands/clasier_academy.svg"
+                        : "/images/brands/clasier-squircle.svg"
+                    }
+                    alt={siteMetadata.title}
                   />
-                  {/* {JSON.stringify(this.state.sticky) +
-                    " - " +
-                    JSON.stringify(isDark)} */}
-                  {siteMetadata.title}
-                </h4>
+                  <span>{siteMetadata.title}</span>
+                </span>
               </Link>
             </div>
           </div>

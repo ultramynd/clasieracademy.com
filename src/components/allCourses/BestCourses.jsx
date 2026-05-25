@@ -43,6 +43,9 @@ export default function BestCourses({ courses }) {
                 <CardImg
                   className="rounded-md shadow-md"
                   src={course.course_pic_url || "/images/noPic.png"}
+                  onError={(event) => {
+                    event.currentTarget.src = "/images/noPic.png";
+                  }}
                 />
               </Link>
             </div>

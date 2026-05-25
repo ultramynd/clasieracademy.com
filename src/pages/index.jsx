@@ -10,7 +10,7 @@ import { getAllAuthors, getAllCourses } from "utils/courses";
 export default function Index({ courses, authors }) {
   return (
     <Layout>
-      <SEO title="Inicio" />
+      <SEO title="Home" />
       <Hero />
       <Partners />
       <section className="mb-5">

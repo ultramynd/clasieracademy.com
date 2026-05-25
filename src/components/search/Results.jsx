@@ -52,6 +52,9 @@ export default function Results({ results }) {
                 <CardImg
                   className="img-result-container"
                   src={element.course.course_pic_url || "/images/noPic.png"}
+                  onError={(event) => {
+                    event.currentTarget.src = "/images/noPic.png";
+                  }}
                 />
                 <div className="py-2 p-md-0">
                   <CardBody className="p-0 px-3">
@@ -79,7 +82,10 @@ export default function Results({ results }) {
                 <CardImg
                   id={`image-${element.item._id}`}
                   className="img-result-container"
-                  src={getPicUrl(element.item)}
+                  src={getPicUrl(element.item) || "/images/noPic.png"}
+                  onError={(event) => {
+                    event.currentTarget.src = "/images/noPic.png";
+                  }}
                 />
                 <div className="py-2 p-md-0">
                   <CardBody className="p-0 px-3">

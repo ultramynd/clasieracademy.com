@@ -2,8 +2,6 @@ import Icons from "components/common/Icons";
 import { useRouter } from "next/router";
 import React from "react";
 import { hero } from "../../../site.config";
-import YouTube from "react-youtube";
-import Vimeo from "@u-wave/react-vimeo";
 
 export default function Hero() {
   const router = useRouter();
@@ -15,9 +13,9 @@ export default function Hero() {
   };
 
   return (
-    <section className="section pt-5 pb-0 mt-4">
+    <section className="section pt-5 pb-0 mt-4 clasier-hero">
       <div className="container-fluid mt-md-1 px-0 px-md-3">
-        <div className="rounded bg-light py-5 px-3 px-sm-0 shadow-md">
+        <div className="rounded py-5 px-3 px-sm-0 shadow-md clasier-hero-panel">
           <div className="row">
             <div className="container">
               <div className="row align-items-center">
@@ -25,7 +23,6 @@ export default function Hero() {
                   <div className="title-heading mr-lg-4">
                     <h1 className="h2  mb-3">
                       {hero.mainTitle}
-                      {/* <span className="text-primary">: cursos-online.com</span> */}
                     </h1>
                     <p className="para-desc text-muted">{hero.subTitle}</p>
                     <div className="subcribe-form mt-4 pt-2">
@@ -54,19 +51,21 @@ export default function Hero() {
                 </div>
 
                 <div className="col-md-6 col-12 mt-4 pt-2 mt-sm-0 pt-sm-0">
-                  <div
-                    className="video-container shadow-md"
-                    style={{ height: "315px" }}
-                  >
-                    <Vimeo
-                      height="420"
-                      width="720"
-                      showByline={false}
-                      showPortrait={false}
-                      controls={false}
-                      video={hero.VimeoVideoId}
-                      autoplay={true}
-                    />
+                  <div className="academy-preview shadow-md">
+                    <div className="academy-preview-header">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                    <div className="academy-preview-body">
+                      <p>Featured path</p>
+                      <h2>Build a book people can trust.</h2>
+                      <div className="academy-preview-list">
+                        <span>Position the idea</span>
+                        <span>Shape the manuscript</span>
+                        <span>Plan the launch</span>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>

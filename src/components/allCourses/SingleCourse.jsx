@@ -12,6 +12,9 @@ export default function CardCourse({ course, author, preview = false }) {
           <CardImg
             className="rounded-top"
             src={course.course_pic_url || "/images/noPic.png"}
+            onError={(event) => {
+              event.currentTarget.src = "/images/noPic.png";
+            }}
           />
           {!preview && (
             <div className="course-price">
@@ -19,7 +22,7 @@ export default function CardCourse({ course, author, preview = false }) {
                 {course.course_price > 0 ? (
                   `${course.course_price} $`
                 ) : (
-                  <b>gratis!</b>
+                  <b>Free</b>
                 )}
               </span>
             </div>
@@ -73,6 +76,9 @@ export default function CardCourse({ course, author, preview = false }) {
         alt={author.name}
         className="avatar avatar-md-sm rounded-circle shadow-md"
         src={author.user_pic || "/images/noPic.png"}
+        onError={(event) => {
+          event.currentTarget.src = "/images/noPic.png";
+        }}
       />
       <div className="ml-2">
         <p className="mb-0 text-dark text-shadow">{author.user_name}</p>

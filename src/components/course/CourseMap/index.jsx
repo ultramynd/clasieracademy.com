@@ -76,7 +76,7 @@ class CourseMap extends React.Component {
     return this.props.items !== undefined && this.props.currentItem !== null ? (
       <>
         <SingleSeparator
-          title={"Contenido del curso"}
+          title={"Course content"}
           currentSection={0}
           active={this.state.col_0}
           onClick={() => {

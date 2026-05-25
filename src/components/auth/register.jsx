@@ -39,12 +39,11 @@ export default function login() {
             <div className="col-12 col-md-6 ml-auto d-none d-md-flex">
               <div className="mr-5 title-heading my-auto">
                 <h1 className="heading text-white title-dark mb-4">
-                  Bienvenido !!!
+                  Welcome to Clasier Academy
                 </h1>
                 <p className="mb-4" style={{ color: "white" }}>
-                  Para acceder a todo el contenido de nuestra academia deves
-                  iniciar sesion en tu cuenta; si no tienes una cuenta, puedes
-                  crearla en menos de un minuto!
+                  Create an account to access your courses, track progress, and
+                  keep learning with Clasier Academy.
                 </p>
               </div>
             </div>
@@ -56,14 +55,14 @@ export default function login() {
                   className="rounded p-4 bg-white"
                   onSubmit={submitHandlerRegister}
                 >
-                  <h3 className="h4 text-black mb-4">Crear cuenta:</h3>
+                  <h3 className="h4 text-black mb-4">Create account</h3>
                   <div className="form-group">
                     <input
                       type="email"
                       name="email"
                       id="input-email"
                       className="form-control"
-                      placeholder="Correo electrónico"
+                      placeholder="Email address"
                       required
                       autoComplete="off"
                     />
@@ -75,7 +74,7 @@ export default function login() {
                       id="input-username"
                       onChange={user_nameChangedHandler}
                       className="form-control"
-                      placeholder="Nombre de cuenta"
+                      placeholder="Account name"
                       required
                       minLength="8"
                       maxLength="20"
@@ -88,7 +87,7 @@ export default function login() {
                       type="text"
                       id="input-password"
                       className="form-control"
-                      placeholder="Contraseña"
+                      placeholder="Password"
                       required
                       minLength="8"
                       autoComplete="off"
@@ -105,19 +104,19 @@ export default function login() {
                       className="custom-control-label d-inline"
                       htmlFor="customCheckRegister"
                     >
-                      Acepto los
-                      <Link href="/terms"> términos y condiciones.</Link>
+                      I accept the
+                      <Link href="/terms"> terms and conditions.</Link>
                     </label>
                   </div>
                   <div className="form-group text-center">
                     <Button type="submit" color="primary">
-                      Crear cuenta
+                      Create account
                       <Icons icon="arrowRight" className="ml-2" />
                     </Button>
                   </div>
                   <div className="text-center">
                     <p className="m-0 text-muted">
-                      <Link href="/login">¿Ya tienes una cuenta?</Link>
+                      <Link href="/login">Already have an account?</Link>
                     </p>
                   </div>
                 </form>

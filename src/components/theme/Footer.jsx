@@ -13,25 +13,13 @@ export default function Footer({ litle }) {
               <div className="col-lg-4 col-12 mb-0 mb-md-4 pb-0 pb-md-2">
                 <div className="logo">
                   <Link href="/">
-                    <h3
-                      className="m-0"
-                      style={{
-                        color: "#fff",
-                      }}
-                    >
-                      <i
-                        style={{
-                          boderRadius: "50%",
-                          color: "#fff",
-                        }}
-                      >
-                        <Icons
-                          icon="code"
-                          className="mr-2 bg-primary p-1 rounded "
-                        />
-                      </i>
-                      {siteMetadata.title}
-                    </h3>
+                    <span className="clasier-brand clasier-brand-light clasier-brand-footer">
+                      <img
+                        src="/images/brands/clasier_logo_white.svg"
+                        alt={siteMetadata.title}
+                      />
+                      <span>{siteMetadata.title}</span>
+                    </span>
                   </Link>
                 </div>
 
@@ -39,7 +27,12 @@ export default function Footer({ litle }) {
                 <ul className="list-unstyled  mb-0 mt-4">
                   {socialIcons.map((icon, index) => (
                     <li className="list-inline-item" key={index}>
-                      <a href="" className="text-foot">
+                      <a
+                        href={icon.url}
+                        className="text-foot"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
                         <Icons className="fa-1x mx-2" icon={icon.icon} />
                       </a>
                     </li>
@@ -81,7 +74,7 @@ export default function Footer({ litle }) {
                           name="email"
                           id="emailsubscribe"
                           className="form-control rounded"
-                          placeholder="Your email:"
+                          placeholder="Email address"
                           required
                         />
                       </div>
@@ -108,7 +101,7 @@ export default function Footer({ litle }) {
             <div className="col-sm-12">
               <div className="text-sm-center">
                 <small className={litle ? "mb-0 text-center" : "mb-0"}>
-                  ©{new Date().getFullYear()} tu-academia.com
+                  &copy;{new Date().getFullYear()} Clasier Academy
                 </small>
               </div>
             </div>

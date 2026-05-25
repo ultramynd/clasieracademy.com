@@ -1,21 +1,22 @@
 const apiUrl = "https://openacademy-api.herokuapp.com";
 
 const siteMetadata = {
-  title: "tu-academia",
+  title: "Clasier Academy",
   author: {
-    name: "Tomas Vasquez",
-    summary: "who works building clean user interfaces with React.",
+    name: "Clasier",
+    summary: "publishing practical training for authors, creators, and book teams.",
   },
-  description: "A blog created with Next.js and Tailwind.css",
-  siteUrl: "https://nextjs-starter-blog-demo.netlify.app/",
-  language: "es-ES",
+  description:
+    "Practical courses from Clasier for authors, publishing teams, and creators building books with strategy.",
+  siteUrl: "https://clasieracademy.com/",
+  language: "en-US",
   social: {
-    twitter: "tomasdetloging",
+    twitter: "clasierpub",
   },
 };
 
 const links = {
-  search: "busqueda",
+  search: "search",
 };
 
 const apiLinks = {
@@ -29,106 +30,109 @@ const apiLinks = {
 const socialIcons = [
   {
     id: 0,
-    icon: "github",
-    url: "https://github.com/tomasdetloging",
+    icon: "youtube",
+    url: "https://youtube.com/ClasierPub",
   },
   {
     id: 356,
-    icon: "youtube",
-    url: "https://www.facebook.com/tomasdetloging",
+    icon: "facebook",
+    url: "https://facebook.com/clasier.pub",
   },
   {
     id: 3,
     icon: "linkedin",
-    url: "https://www.linkedin.com/in/tomasdetloging/",
+    url: "https://www.linkedin.com/company/clasierpub",
   },
   {
     id: 2,
     icon: "instagram",
-    url: "https://www.instagram.com/tomasdetloging/",
+    url: "https://instagram.com/clasier.pub",
   },
   {
     id: 4,
     icon: "twitter",
-    url: "https://www.twitter.com/tomasdetloging/",
+    url: "https://twitter.com/clasierpub",
   },
 ];
 
 const navbarLinks = [
-  { title: "Inicio", url: "/" },
-  { title: "Cursos", url: "/courses" },
-  { title: "Blog", url: "/blog" },
+  { title: "Home", url: "/" },
+  { title: "Courses", url: "/courses" },
+  { title: "Clasier Publishing", url: "https://pub.clasier.com" },
 
   // {
-  //   title: "Cursos",
+  //   title: "Courses",
   //   submenu: [
-  //     { title: "Inicio", url: "/" },
+  //     { title: "Home", url: "/" },
   //     { title: "Courses", url: "/courses" },
   //   ],
   // },
 ];
 
 const hero = {
-  mainTitle: "Cursos online de desarrollo de software en tu-academia.com",
-  subTitle: "bla bla bla bla bla",
-  searchPlaceholder: "Buscar...",
+  mainTitle: "Learn the systems behind better books.",
+  subTitle:
+    "Clasier Academy turns publishing experience into practical courses for authors, creators, editors, and book teams.",
+  searchPlaceholder: "Search publishing skills",
   VimeoVideoId: "208266874",
 };
 
 const allCourses = {
-  title: "Cursos",
-  subTitle: "bla bla bla bla bla",
-  searchPlaceholder: "Buscar...",
+  title: "Courses",
+  subTitle:
+    "Explore guided lessons across writing, editorial planning, launch strategy, and digital publishing.",
+  searchPlaceholder: "Search all courses",
   bestCourses: {
-    title: "Mejores cursos",
-    subTitle: "bla bla bla bla bla",
+    title: "Featured learning paths",
+    subTitle: "Start with the programs most useful to authors and publishing teams.",
   },
   courses: {
-    title: "Todos los cursos",
-    subTitle: "bla bla bla bla bla",
+    title: "All courses",
+    subTitle: "Browse every available Clasier Academy course.",
   },
 };
 
 const singleCourse = {
-  buttonStartText: "Empezar",
+  buttonStartText: "Start learning",
   description: {
-    descriptionTitleText: "Descripcion del curso",
-    contentTitleText: "Contenido del curso",
-    requiredTitleText: "Requisitos del curso",
+    descriptionTitleText: "Course overview",
+    contentTitleText: "Course content",
+    requiredTitleText: "Before you begin",
     required: [],
   },
 };
 
 const popularCourses = {
-  title: "Cursos mas populares",
-  subTitle: "bla bla bla bla bla",
+  title: "Popular courses",
+  subTitle: "Practical training for turning ideas, drafts, and expertise into stronger books.",
 };
 
 const search = {
-  title: "Resultados de la busqueda",
-  searchPlaceholder: "Buscar...",
-  labelResults: "resultados:",
+  title: "Search results",
+  searchPlaceholder: "Search Clasier Academy",
+  labelResults: "results:",
 };
 
 const footer = {
-  aboutText: "Comprometidos en darte el mejor contenido gratuito de internet.",
-  LinksTitle: "Enlaces",
+  aboutText:
+    "Clasier Academy helps authors and publishing professionals learn the systems behind clearer writing, sharper positioning, and stronger book launches.",
+  LinksTitle: "Explore",
   links: [
     {
-      title: "Inicio",
+      title: "Home",
       url: "/",
     },
     {
-      title: "Inicio",
-      url: "/",
+      title: "Courses",
+      url: "/courses",
     },
     {
-      title: "Inicio",
-      url: "/",
+      title: "Clasier Publishing",
+      url: "https://pub.clasier.com",
     },
   ],
-  newsLetterTitle: "NewsLetter",
-  newsLetterText: "Registrate y recive las ultimas novedades por tu correo.",
+  newsLetterTitle: "Stay in the loop",
+  newsLetterText: "Get practical notes on writing, publishing, and building book-led authority.",
 };
 
 module.exports = {
