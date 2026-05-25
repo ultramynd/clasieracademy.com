@@ -8,44 +8,115 @@ const academyAsset = (name) =>
 const features = [
   {
     icon: "books",
-    title: "Strategic positioning",
-    text: "Move from being one of many to the professional or brand people choose first.",
+    title: "Command attention",
+    text: "Win clients and customers by communicating with clarity, authority, and charm.",
   },
   {
     icon: "comments",
-    title: "Influence-led communication",
-    text: "Speak, write, and present your value with clarity, authority, and commercial impact.",
+    title: "Stand out clearly",
+    text: "Stop blending into crowded markets and become easier to choose.",
   },
   {
     icon: "star",
-    title: "Live refinement",
-    text: "Apply the frameworks in real time with a curated room built for depth and interaction.",
+    title: "Become preferred",
+    text: "Position yourself or your brand as the obvious choice in your field.",
   },
 ];
 
-const collections = [
-  ["curriculum-intro.jpg", "Strategic Positioning", true],
-  ["why-positioning.jpg", "Narrative Intelligence"],
-  ["details-room.jpg", "Influence Communication"],
-  ["why-now-bg.jpg", "Messaging That Converts"],
-  ["reserve-side.png", "Live Refinement"],
+const storyParagraphs = [
+  "Today's business landscape is not only noisy and attention-fragmented, it's hyper-competitive. The best professionals and businesses do not always get the biggest opportunities or make the most sales. The best-positioned ones do.",
+  "Technical competence alone is no longer enough to guarantee best outcomes for professionals and businesses. There are dozens of people and organizations offering what you are selling. What distinguishes you, therefore, and why should more customers buy from you than your competitors?",
+  "Despite the world getting smaller through digital access, visibility, influence, and sustained success are costlier today than ever. Professionals and brands are judged not just by what they do, but by how clearly, strategically, and persuasively they communicate their value.",
+  "This is why many high-performing individuals and organizations remain under-recognized, underpaid, or overlooked. Not due to a lack of expertise, but due to gaps in market positioning, clear messaging, and strategic communication.",
+  "The Communication Edge is designed to bridge this gap by equipping communication professionals and startups to craft compelling narratives, command authority, leverage digital, and consistently outperform in their fields.",
+];
+
+const experienceBullets = [
+  "Command clients and customers' attention and win their repeat business",
+  "Communicate with clarity, authority, and charm",
+  "Stand out in the crowded market spaces where you do business",
+  "Become the obvious, preferred choice in your field",
+];
+
+const promiseBullets = [
+  "Clarify your message so prospective customers instantly get your value",
+  "Build a powerful professional or business narrative that sells your value",
+  "Communicate with precision, confidence, and influence",
+  "Position yourself or your brand as the preferred choice, not just an option",
+];
+
+const learningTopics = [
+  {
+    title: "Strategic Positioning for Competitive Advantage",
+    text: "How to move from being one of many to the one they choose.",
+  },
+  {
+    title: "Crafting a Compelling Professional or Business Narrative",
+    text: "Turn your expertise and value offering into a powerful story that compels sales.",
+  },
+  {
+    title: "Influence-Driven Communication",
+    text: "Speak and present in ways that command respect, trust, and action.",
+  },
+  {
+    title: "Authority Building and Personal or Corporate Branding",
+    text: "Position your brand as a thought leader in your space.",
+  },
+  {
+    title: "Messaging That Converts",
+    text: "Communicate your value clearly, so clients, customers, and stakeholders say yes faster.",
+  },
+  {
+    title: "Real-World Application and Live Refinement",
+    text: "Hands-on exercises to sharpen your positioning in real time.",
+  },
+];
+
+const audience = [
+  "Communication executives, officers, and teams",
+  "Content creators and social media managers",
+  "Branding, sales, and marketing executives, officers, and teams",
+  "Business development and customer experience executives, officers, and teams",
+  "Founders and C-Suite executives",
+  "Consultants, coaches, and knowledge professionals",
+  "Anyone serious about influence, visibility, selling, and professional growth",
+];
+
+const eventDays = [
+  ["Day 1", "7 May, 2026", "9am - 5pm", "Abuja; venue shared with registered participants"],
+  ["Day 2", "8 May, 2026", "10am - 4pm", "Same venue"],
 ];
 
 const facilitators = [
-  ["curriculum-intro.jpg", "Narrative Intelligence", "Sam Gaza Timothy", "Chief Publishing Officer, Clasier Publishing Ltd."],
-  ["why-positioning.jpg", "Persuasion Psychology", "Akinwumi Akinola", "Behavioural Insights Lead, Policy Innovation Centre"],
-  ["details-room.jpg", "Digital Mastery", "Msen Nabo", "Communications Officer, International IDEA"],
-  ["why-now-bg.jpg", "AI Hacks", "Dr. Kunle Kakanfo", "Founder, AI for Social Impact (AI4SI)"],
-  ["reserve-side.png", "Marketing and Advertising", "Adaeze Ihuoma", "Head, Marketing Department, Hall7 Real Estate"],
-  ["hero-edge.jpg", "Media Advantage", "Kayode Kikiolu", "Presenter, Channels TV"],
+  ["curriculum-intro.jpg", "Narrative Intelligence: The Power of Storytelling for Branding, Influence and Sales", "Sam Gaza Timothy", "Chief Publishing Officer, Clasier Publishing Ltd."],
+  ["why-positioning.jpg", "Persuasion Psychology: The Science of Getting People To Do What You Want", "Akinwumi Akinola", "Behavioural Insights Lead, Policy Innovation Centre"],
+  ["details-room.jpg", "Digital Mastery: Leveraging Social Media to Build Your Brand, Presence and Sales", "Msen Nabo", "Communications Officer, International IDEA"],
+  ["why-now-bg.jpg", "AI Hacks: Boosting Professional and Corporate Productivity to Stay Ahead of the Curve", "Dr. Kunle Kakanfo", "Founder, AI for Social Impact (AI4SI)"],
+  ["reserve-side.png", "Distilling Marketing and Advertising for Strategic Business Outcomes", "Adaeze Ihuoma", "Head, Marketing Department, Hall7 Real Estate"],
+  ["hero-edge.jpg", "Media Advantage: How to Make the Media Work for Your Brand", "Kayode Kikiolu", "Presenter, Channels TV"],
+  ["curriculum-intro.jpg", "The Strategic Art of Seducing Customers to Repeatedly Buy from You", "Afolake Agunbiade", "CEO, CADsync Consult"],
+  ["why-positioning.jpg", "Cultivating Charisma and Charm for Influencing Outcomes in Your Favour", "Emmanuel Oyewole", "Lead Director, Influence Academy"],
+];
+
+const whyNowBullets = [
+  "Earn greater customer attention and win better market share",
+  "Sell more than others",
+  "Influence buying and stakeholder decisions",
+  "Lead conversations in their industries",
 ];
 
 const outcomes = [
   "A clearly defined positioning strategy",
   "A refined professional or corporate narrative",
-  "Stronger communication frameworks",
+  "Stronger communication frameworks guaranteed to convert",
   "Increased confidence and communication clarity",
   "Practical tools you can apply immediately",
+];
+
+const earlyBird = [
+  "Priority seating",
+  "Exclusive resource pack",
+  "2-month post-event free access to session recordings",
 ];
 
 export default function AcademyLanding() {
@@ -59,15 +130,14 @@ export default function AcademyLanding() {
         />
         <div className="academy-showcase-card">
           <span className="academy-label">The Communication Edge</span>
-          <h1>Position to outperform.</h1>
+          <h1>How Winning Professionals & Brands Position to Outperform Everyone Else</h1>
           <p>
-            A two-day intensive in Abuja for communication professionals,
-            founders, teams, and growth-minded startups ready to lead, influence,
-            and win.
+            A two-day, high-impact training for communication professionals and
+            startups ready to lead, influence, and win.
           </p>
           <div className="academy-actions">
             <a href="#reserve-seat" className="btn btn-primary">
-              Reserve your seat
+              Reserve Your Seat Now
             </a>
           </div>
           <div className="academy-sale-ribbon">50 seats</div>
@@ -94,49 +164,105 @@ export default function AcademyLanding() {
         </div>
       </section>
 
-      <section className="academy-section" id="curriculum">
+      <section className="academy-section academy-story">
         <div className="container">
-          <div className="academy-section-head">
-            <div>
-              <span className="academy-kicker">Curriculum</span>
-              <h2>Trending Collection</h2>
-            </div>
-            <a href="#reserve-seat" className="btn btn-light">
-              View all courses
-            </a>
-          </div>
-
-          <div className="academy-collection">
-            <article className="academy-collection-main">
-              <img src={academyAsset(collections[0][0])} alt={collections[0][1]} />
-              <div>
-                <h3>{collections[0][1]}</h3>
+          <div className="row align-items-start">
+            <div className="col-lg-7 col-12">
+              <span className="academy-kicker">The positioning gap</span>
+              <h2>You are good at what you do, but are you positioned to win?</h2>
+              <div className="academy-copy-flow">
+                {storyParagraphs.map((paragraph) => (
+                  <p key={paragraph}>{paragraph}</p>
+                ))}
               </div>
-            </article>
-            <div className="academy-module-grid">
-              {collections.slice(1).map(([image, title]) => (
-                <article className="academy-module-card" key={title}>
-                  <img src={academyAsset(image)} alt={title} />
-                  <h3>{title}</h3>
-                </article>
-              ))}
+            </div>
+            <div className="col-lg-5 col-12 mt-4 mt-lg-0">
+              <aside className="academy-side-panel">
+                <span className="academy-kicker">This experience is for you, if you want to...</span>
+                <ul className="academy-check-list">
+                  {experienceBullets.map((item) => (
+                    <li key={item}>
+                      <Icons icon="star" />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+                <p>
+                  Join a curated room of forward-thinking communication
+                  professionals, teams, and organizations for a transformational,
+                  two-day training.
+                </p>
+                <a href="#reserve-seat" className="btn btn-primary">
+                  Reserve Your Seat Now
+                </a>
+              </aside>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="academy-cta-band">
+      <section className="academy-cta-band academy-promise">
         <div className="container">
-          <span className="academy-kicker">Why this training exists</span>
-          <h2>Technical competence is no longer enough on its own.</h2>
+          <span className="academy-kicker">Our Promise</span>
+          <h2>The Communication Edge is not another generic training.</h2>
           <p>
-            The market is noisy, attention is fragmented, and customers judge
-            brands by how clearly and persuasively they communicate value. This
-            training helps close the gap between expertise and market advantage.
+            This is a strategic positioning experience designed to help you
+            communicate better, compete differently, and win.
           </p>
-          <a href="#reserve-seat" className="btn btn-primary">
-            Reserve your seat
-          </a>
+          <div className="academy-promise-grid">
+            {promiseBullets.map((item) => (
+              <article key={item}>
+                <Icons icon="star" />
+                <p>{item}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="academy-section" id="curriculum">
+        <div className="container">
+          <div className="academy-section-head">
+            <div>
+              <span className="academy-kicker">What You'll Learn</span>
+              <h2>Practical, high-level insights for market advantage.</h2>
+            </div>
+            <a href="#reserve-seat" className="btn btn-light">
+              Reserve seat
+            </a>
+          </div>
+
+          <div className="academy-learning-grid">
+            {learningTopics.map((topic, index) => (
+              <article className="academy-learn-card" key={topic.title}>
+                <span>{String(index + 1).padStart(2, "0")}</span>
+                <h3>{topic.title}</h3>
+                <p>{topic.text}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="academy-section academy-audience">
+        <div className="container">
+          <div className="row align-items-center">
+            <div className="col-lg-5 col-12">
+              <img src={academyAsset("curriculum-intro.jpg")} alt="A focused professional learning session" />
+            </div>
+            <div className="col-lg-7 col-12 mt-4 mt-lg-0">
+              <span className="academy-kicker">Who This Is For</span>
+              <h2>If success depends on how well you communicate and position value, you should be in this room.</h2>
+              <div className="academy-audience-list">
+                {audience.map((item) => (
+                  <span key={item}>{item}</span>
+                ))}
+              </div>
+              <a href="#reserve-seat" className="btn btn-primary">
+                Reserve Your Seat Now
+              </a>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -144,21 +270,19 @@ export default function AcademyLanding() {
         <div className="container">
           <div className="row align-items-start">
             <div className="col-lg-6 col-12">
-              <span className="academy-kicker">Details</span>
-              <h2>Lead, influence, and win in a curated room.</h2>
+              <span className="academy-kicker">Event Details</span>
+              <h2>Lead, influence, and win in a curated Abuja room.</h2>
               <div className="academy-event-list">
-                <article>
-                  <strong>7 May 2026</strong>
-                  <span>Day 1, 9am - 5pm</span>
-                </article>
-                <article>
-                  <strong>8 May 2026</strong>
-                  <span>Day 2, 10am - 4pm</span>
-                </article>
-                <article>
-                  <strong>Abuja</strong>
-                  <span>Exact venue shared with registered participants.</span>
-                </article>
+                {eventDays.map(([day, date, time, venue]) => (
+                  <article key={day}>
+                    <strong>{day}</strong>
+                    <div>
+                      <span>{date}</span>
+                      <span>{time}</span>
+                      <span>{venue}</span>
+                    </div>
+                  </article>
+                ))}
               </div>
             </div>
             <div className="col-lg-6 col-12 mt-4 mt-lg-0">
@@ -169,10 +293,10 @@ export default function AcademyLanding() {
                 />
                 <div>
                   <Icons icon="playCircle" />
-                  <h3>Only 50 seats available</h3>
+                  <h3>Only 50 Seats Available</h3>
                   <p>
-                    Seats are limited to keep the experience interactive,
-                    practical, and personal.
+                    Seats are intentionally limited to maintain depth,
+                    interaction, and personalized learning.
                   </p>
                 </div>
               </div>
@@ -185,13 +309,13 @@ export default function AcademyLanding() {
         <div className="container">
           <div className="academy-section-head">
             <div>
-              <span className="academy-kicker">Facilitators</span>
-              <h2>Learn from operators across narrative, persuasion, visibility, and growth.</h2>
+              <span className="academy-kicker">Training Curriculum</span>
+              <h2>Learn from operators across narrative, persuasion, digital, AI, media, and customer influence.</h2>
             </div>
           </div>
           <div className="row">
             {facilitators.map(([image, topic, name, role]) => (
-              <div className="col-lg-4 col-md-6 col-12" key={topic}>
+              <div className="col-lg-3 col-md-6 col-12" key={`${topic}-${name}`}>
                 <article className="academy-facilitator-card">
                   <img src={academyAsset(image)} alt={topic} />
                   <div>
@@ -206,6 +330,34 @@ export default function AcademyLanding() {
         </div>
       </section>
 
+      <section className="academy-section academy-why-now">
+        <div className="container">
+          <div className="row align-items-center">
+            <div className="col-lg-6 col-12">
+              <span className="academy-kicker">Why This Matters Now</span>
+              <h2>The world, and the marketplace with it, is evolving fast.</h2>
+              <p>
+                Attention is getting thinner. Competition is skyrocketing.
+                Perception is everything now: how customers think of you. Those
+                who understand how to position and communicate strategically will
+                lead. Those who do not will keep getting left behind.
+              </p>
+              <ul className="academy-check-list">
+                {whyNowBullets.map((item) => (
+                  <li key={item}>
+                    <Icons icon="star" />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="col-lg-6 col-12 mt-4 mt-lg-0">
+              <img src={academyAsset("why-now-bg.jpg")} alt="A symbol of market momentum and growth" />
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="academy-section academy-outcomes">
         <div className="container">
           <div className="row align-items-center">
@@ -216,7 +368,7 @@ export default function AcademyLanding() {
               />
             </div>
             <div className="col-lg-7 col-12 mt-4 mt-lg-0">
-              <span className="academy-kicker">What you walk away with</span>
+              <span className="academy-kicker">What You'll Walk Away With</span>
               <h2>The tools to stop blending in and start standing out.</h2>
               <div className="academy-outcome-list">
                 {outcomes.map((outcome) => (
@@ -235,16 +387,25 @@ export default function AcademyLanding() {
         <div className="container">
           <div className="academy-reserve-panel">
             <div>
-              <span className="academy-kicker">Reserve your seat</span>
+              <span className="academy-kicker">Register Now</span>
               <h2>The Communication Edge is your competitive advantage.</h2>
               <p>
-                Registration closes once slots are filled. Early bird bonuses
-                include priority seating, an exclusive resource pack, and
-                extended access to session recordings.
+                Do not let another year go by while your company remains
+                under-recognized, underpaid, or overlooked in your market. Once
+                slots are filled, registration closes.
               </p>
+              <div className="academy-bonus">
+                <strong>Early Bird Bonus</strong>
+                <span>Ends on 20 April or after the first 20 registrations.</span>
+                <ul>
+                  {earlyBird.map((item) => (
+                    <li key={item}>{item}</li>
+                  ))}
+                </ul>
+              </div>
             </div>
             <Link href="/register" className="btn btn-primary">
-              Register and reserve
+              Register & Reserve Your Seat Now
             </Link>
           </div>
         </div>
